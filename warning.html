@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Alert</title>
+    <style>
+        @keyframes bgAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #ff4c4c, #ff3030, #d90000, #a70000);
+            background-size: 300% 300%;
+            animation: bgAnimation 8s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #goBack {
+            background-color: white;
+            color: #ff4c4c;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        #goBack:hover {
+            background-color: #ffeaea;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠ Warning: Potential Phishing Site ⚠</h1>
+        <p>This website has been flagged as suspicious. For your safety, we recommend not entering any personal information.</p>
+        <button id="goBack">Go Back</button>
+    </div>
+    <script>
+        document.getElementById("goBack").addEventListener("click", () => {
+            history.back();
+        });
+    </script>
+</body>
+</html>
