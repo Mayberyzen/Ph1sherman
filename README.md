@@ -15,7 +15,7 @@ Ph1sherman is a lightweight yet powerful browser extension designed to detect an
 Want to test Ph1sherman before publishing? Follow these steps:
 
 1️⃣  clone this repository
-git clone https://github.com/Mayberyzen/Ph1sherman.git
+git clone https://github.com/Mayberyzen/Ph1sherman.git (get your own google safe browsing API its free and replace it in background.js)
 2️⃣ Open Google Chrome and navigate to:
 chrome://extensions/
 3️⃣ Enable Developer Mode (toggle in the top right).
