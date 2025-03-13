@@ -34,7 +34,7 @@ function extractMainDomain(url) {
 function checkSite(url) {
     console.log("Checking site:", url);
 
-    const API_KEY = "AIzaSyCU_KXjnPcM1KzzDnKn8X13pcpE-voUPC0"; 
+    const API_KEY = "your google safe browsing api (its freely available)"; 
     const API_URL = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${API_KEY}`;
 
     const requestBody = {
